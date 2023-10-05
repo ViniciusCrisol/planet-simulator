@@ -8,7 +8,7 @@ G = 6.67428e-11
 # Distance between sun and earth
 AU = 1000 * 149.6e6
 
-# Assumed scale: 100 pixels = 1AU
+# 100 pixels = 1AU
 SCALE = 250 / AU
 
 MIN = 60
@@ -79,20 +79,20 @@ class Planet(Astro):
 
 
 def main():
-    sun = Astro(0, 0, 30, (242, 131, 32), 1.98892 * 10 ** 30)
+    sun = Astro(0, 0, 30, (241, 93, 34), 1.98892 * 10 ** 30)
     astros = [
         sun,
         Planet(
-            0.387 * AU, 0, 8, (89, 88, 86), 3.30 * 10 ** 23, -47.4 * 1000,
+            .387 * AU, 0, 8, (192, 189, 188), 3.30 * 10 ** 23, -47.4 * 1000,
         ),
         Planet(
-            -1 * AU, 0, 16, (66, 107, 143), 5.9742 * 10 ** 24, 29.783 * 1000,
+            -1 * AU, 0, 16, (99, 136, 168), 5.9742 * 10 ** 24, 29.783 * 1000,
         ),
         Planet(
-            -1.524 * AU, 0, 12, (218, 189, 157), 6.39 * 10 ** 23, 24.077 * 1000,
+            -1.524 * AU, 0, 12, (242, 123, 95), 6.39 * 10 ** 23, 24.077 * 1000,
         ),
         Planet(
-            0.723 * AU, 0, 14, (135, 138, 141), 4.8685 * 10 ** 24, -35.02 * 1000,
+            .723 * AU, 0, 14, (217, 178, 146), 4.8685 * 10 ** 24, -35.02 * 1000,
         ),
     ]
 
@@ -111,6 +111,7 @@ def main():
                     points = []
                     for (x, y) in astro.orbit:
                         points.append(fix_scale(x, y))
+
                     pygame.draw.lines(w, LINE_COLOR, False, points, 2)
 
             pygame.draw.circle(w, astro.color, fix_scale(astro.x, astro.y), astro.radius)
