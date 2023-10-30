@@ -3,7 +3,11 @@
 ---
 
 Utilizando a biblioteca [Pygame](https://www.pygame.org), foi desenvolvido um simulador da rotação dos quatro primeiros
-planetas do sistema solar.
+planetas do sistema solar. O seguinte vídeo ilustra o funcionamento do programa.
+
+
+https://github.com/ViniciusCrisol/planet-simulator/assets/61323173/f9aece40-81fe-4f97-ad8d-6632eb4ed69b
+
 
 ## Instalação
 
